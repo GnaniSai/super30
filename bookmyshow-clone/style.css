@@ -1,0 +1,487 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+/* -------------------------- Header ---------------------------------*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10% 0 10%;
+  width: 100%;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 50vw;
+}
+
+.header-left li {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.searchbar {
+  display: flex;
+  gap: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.315);
+  width: 35vw;
+  padding: 0 10px;
+  border-radius: 5px;
+  height: 37px;
+}
+#searchshows {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+#searchshows:focus {
+  outline: none;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-right li {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+#location {
+  border: none;
+  background-color: white;
+  width: 100px;
+}
+
+.signin {
+  padding: 6px 15px;
+  border: none;
+  background-color: #f84464;
+  color: white;
+  border-radius: 5px;
+  font-size: 0.75rem;
+}
+
+.signin:hover {
+  cursor: pointer;
+  background-color: #f84465e3;
+}
+
+/* -------------------------- Header ---------------------------------*/
+
+/* -------------------------- Nav ---------------------------------*/
+nav {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(220, 220, 220, 0.256);
+  color: rgb(38, 30, 30);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10% 0 10%;
+  width: 100%;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-left li,
+.nav-right li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.nav-left {
+  font-size: 0.88rem;
+}
+
+.nav-right {
+  font-size: 0.77rem;
+}
+
+/* -------------------------- Nav ---------------------------------*/
+
+/* -------------------------- Main ---------------------------------*/
+
+/* -------------------------- Section 1 ---------------------------------*/
+
+.section1 {
+  background-image: url(images/seethamma-vakitlo-sirimalle-chettu-banner.avif);
+  background-position: 220px center;
+  background-repeat: no-repeat;
+  background-color: rgb(31, 24, 24);
+  height: 490px;
+  position: relative;
+  top: 0;
+  font-family: sans-serif;
+}
+.movie-banner {
+  position: absolute;
+  top: 0;
+  height: 490px;
+  width: 100%;
+  background: linear-gradient(90deg ,rgb(26,26,26),rgb(26, 26, 26),rgba(26, 26, 26, 0.744), rgba(26, 26, 26, 0));
+}
+.movie {
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10% 0 10%;
+  z-index: 10;
+}
+.movie-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 65%;
+}
+.movieposter {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+.movieposter img {
+  border-radius: 10px 10px 0px 0px;
+  height: 400px;
+}
+.movieposter p {
+  font-size: 0.8rem;
+  color: white;
+  padding: 3px 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+.movie-title h1 {
+  font-size: 2.2rem;
+  color: white;
+  font-weight: 600;
+}
+
+.movie-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 6px;
+  width: 450px;
+  color: white;
+  background-color: #333333;
+  margin: 10px 0;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.movie-rating button {
+  background-color: white;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 550;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.movie-rating p span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.arrow {
+  padding-top: 12px;
+  width: 20px;
+  fill: white;
+}
+
+.movie-rating:hover {
+  cursor: pointer;
+}
+
+.movie-language {
+  margin: 30px 0px;
+}
+
+.movie-language a {
+  padding: 5px 10px;
+  color: black;
+  border-radius: 3px;
+  margin-right: 4px;
+  text-decoration: none;
+  background-color: #efe5e5;
+  font-size: 1rem;
+}
+
+.movie-language a:hover {
+  text-decoration: underline;
+}
+
+.movie-duration pre {
+  color: white;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
+.book-tickets {
+  padding: 15px 65px;
+  border: none;
+  background-color: #f84464;
+  color: white;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.book-tickets:hover {
+  background-color: #f84465d4;
+}
+.share-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 120px;
+  height: 50px;
+  margin-top: 30px;
+  margin-right: 20px;
+  background-color: rgba(0, 0, 0, 0.63);
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.share-button a {
+  text-decoration: none;
+  color: white;
+}
+
+.share-button img {
+  width: 30px;
+}
+/* -------------------------- Section 1 ---------------------------------*/
+
+/* -------------------------- Section 2 ---------------------------------*/
+.about,
+.cast,
+.crew,
+.reviews{
+  margin: 0px 30% 0px 10%;
+}
+
+.about-details h1{
+margin-top: 30px;
+}
+.about-details p{
+  margin: 20px 0;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.84);
+  line-height: 1.4;
+}
+
+ hr{
+  margin: 30px 0;
+  border-color: rgb(219 215 215 / 24%);
+}
+
+/* -------------------------- Section 2 ---------------------------------*/
+
+/* -------------------------- Section 3 ---------------------------------*/
+
+.cast-flex{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.cast-images{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  text-align: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.cast-images p{
+  line-height: 1.4;
+}
+.cast-images img{
+  width: 120px;
+  border-radius: 100px;
+  margin-bottom: 8px;
+}
+
+.cast-images span{
+  font-size: 0.9rem;
+  color: rgb(104, 101, 101);
+}
+
+/* -------------------------- Section 3 ---------------------------------*/
+
+/* -------------------------- Section 4 ---------------------------------*/
+
+
+.crew-flex{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.crew-images{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  text-align: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.crew-images p{
+  line-height: 1.4;
+}
+.crew-images img{
+  width: 120px;
+  border-radius: 100px;
+  margin-bottom: 8px;
+}
+
+.crew-images span{
+  font-size: 0.9rem;
+  color: rgb(104, 101, 101);
+}
+
+/* -------------------------- Section 4 ---------------------------------*/
+
+/* -------------------------- Section 5 ---------------------------------*/
+
+.user-reviews{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.user-reviews p{
+  color:#f03557;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.total-review{
+  color: #686565;
+}
+
+.user-comments{
+  display: flex;
+  margin: 20px 0;
+  gap: 15px;
+  color: #f84464;
+  overflow: hidden;
+}
+
+.comment{
+  border: 1px solid rgba(0, 0, 0, 0.747);
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 18px;
+  text-wrap: nowrap;
+}
+.comment span{
+  background-color: #ccc5c5;
+  color: rgb(0, 0, 0);
+  font-size: 0.9rem;
+  padding: 2px 4px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.comments{
+  display: flex;
+  overflow: hidden;
+  gap: 30px;
+}
+
+.comment-box{
+  display: flex;
+  flex-direction:column;
+  width: 450px;
+  height: 250px;
+  border: 1px solid rgba(0, 0, 0, 0.818);
+  padding: 20px;
+  border-radius: 10px;
+}
+.user-profile{
+  display: flex;
+  justify-content: space-between;
+}
+.user-profile div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.comment-place{
+  margin-top: 20px;
+  width: 100%;
+  height: 60%;
+}
+
+.socials{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.likes-dislikes{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.like{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+}
+.like img{
+  width: 20px;
+  fill: gray;
+}
+.likes-dislikes img{
+  width: 20px;
+}
+.share-comment{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.share-comment img{
+  color: black;
+}
+.share-comment p{
+  color: gray;
+}
+
+
