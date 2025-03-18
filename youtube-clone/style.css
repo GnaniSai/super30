@@ -1,0 +1,56 @@
+.hover:hover {
+  background-color: #272727;
+}
+.scroll-bar {
+  overflow-y: scroll;
+}
+.scroll-bar::-webkit-scrollbar {
+  width: 5px;
+}
+.scroll-bar::-webkit-scrollbar-track {
+  background: #272727;
+}
+.scroll-bar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+.scroll-bar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  cursor: pointer;
+}
+
+.scroll-flex {
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.scroll-bar-main {
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.channel-hover:hover {
+  color: rgb(222, 215, 215);
+}
+.text-grey {
+  color: grey;
+}
+body {
+  overflow: hidden;
+  background-color: #0f0f0f !important;
+}
+.small-sidebar {
+  display: none !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .sidebar {
+    display: none !important;
+  }
+  .small-sidebar {
+    display: flex !important;
+  }
+  .main {
+    width: 92vw !important;
+  }
+}
